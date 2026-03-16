@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Quiz</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="quiz-page quiz-car">
+  <main class="quiz-shell">
+    <a class="back-link" href="index.html">← Back to Games</a>
+    <section class="quiz-header">
+      <div class="hero-bubble">🚦</div>
+      <h1>Car Quiz</h1>
+      <p>Answer three easy questions and race to the finish line.</p>
+    </section>
+
+    <section class="quiz-panel" data-quiz="car">
+      <div class="quiz-topline">
+        <span id="car-progress">Question 1 of 3</span>
+        <span id="car-score">Score: 0</span>
+      </div>
+      <h2 id="car-question">Loading question...</h2>
+      <div id="car-answers" class="answers"></div>
+      <p id="car-feedback" class="feedback" aria-live="polite"></p>
+      <button id="car-next" class="next-button" type="button">Next Question</button>
+      <button id="car-restart" class="restart-button" type="button">Play Again</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

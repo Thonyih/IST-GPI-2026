@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kids Quiz Garage</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="home-page">
+  <main class="page-shell">
+    <section class="hero">
+      <p class="eyebrow">Play, Learn, Smile</p>
+      <h1>Kids Quiz Garage</h1>
+      <p class="hero-copy">
+        Pick a bright adventure, enter the secret access code, and start a quick quiz game.
+      </p>
+      <div class="code-badge">Access code for both games: <strong>123456abc</strong></div>
+    </section>
+
+    <section class="game-grid">
+      <article class="game-card car-card">
+        <div class="game-icon">🚗</div>
+        <h2>Car Quiz</h2>
+        <p>Zoom through colorful questions about cars, wheels, and safe road fun.</p>
+        <label for="car-code">Enter code</label>
+        <input id="car-code" class="code-input" type="text" placeholder="Type 123456abc">
+        <button class="play-button" data-code-target="car-code" data-destination="car-quiz.html">
+          Start Car Quiz
+        </button>
+        <p class="hint">Secret code: 123456abc</p>
+      </article>
+
+      <article class="game-card treasure-card">
+        <div class="game-icon">🏴‍☠️</div>
+        <h2>Treasure Quiz</h2>
+        <p>Follow the map and answer happy treasure hunt questions for a shiny win.</p>
+        <label for="treasure-code">Enter code</label>
+        <input id="treasure-code" class="code-input" type="text" placeholder="Type 123456abc">
+        <button class="play-button" data-code-target="treasure-code" data-destination="treasure-quiz.html">
+          Start Treasure Quiz
+        </button>
+        <p class="hint">Secret code: 123456abc</p>
+      </article>
+    </section>
+
+    <p id="access-message" class="access-message" aria-live="polite"></p>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
