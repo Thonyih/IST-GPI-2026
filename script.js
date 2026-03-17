@@ -1,9 +1,9 @@
 const accessCodes = {
-  car: "car-spark-01",
-  treasure: "treasure-hunt-02",
-  alphabet: "alpha-fun-03",
-  numbers: "count-play-04",
-  colors: "shape-color-05"
+  carQuiz: "car-game-quiz-01",
+  treasureQuiz: "treasure-game-quiz-02",
+  alphabetMatchApp: "alphabet-match-app-03",
+  numbersCountingApp: "numbers-counting-app-04",
+  colorsShapesApp: "colors-shapes-app-05"
 };
 
 const quizData = {
