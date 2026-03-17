@@ -1,4 +1,10 @@
-const ACCESS_CODE = "123456abc";
+const accessCodes = {
+  car: "car-spark-01",
+  treasure: "treasure-hunt-02",
+  alphabet: "alpha-fun-03",
+  numbers: "count-play-04",
+  colors: "shape-color-05"
+};
 
 const quizData = {
   car: [
@@ -105,14 +111,15 @@ function setupAccessButtons() {
     button.addEventListener("click", () => {
       const input = document.getElementById(button.dataset.codeTarget);
       const value = input.value.trim();
+      const expectedCode = accessCodes[button.dataset.app];
 
-      if (value === ACCESS_CODE) {
+      if (value === expectedCode) {
         window.location.href = button.dataset.destination;
         return;
       }
 
       if (message) {
-        message.textContent = "That code is not right yet. Try 123456abc.";
+        message.textContent = "That entry is not correct.";
       }
     });
   });

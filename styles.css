@@ -85,6 +85,51 @@ body {
   font-size: 1.05rem;
 }
 
+.activity-section {
+  padding: 24px;
+  border-radius: 32px;
+  margin-bottom: 28px;
+  box-shadow: var(--shadow);
+  animation: fadeLift 0.8s ease;
+}
+
+.games-section {
+  background: linear-gradient(180deg, rgba(255, 239, 193, 0.92), rgba(255, 214, 191, 0.92));
+  border: 4px solid rgba(255, 143, 88, 0.28);
+}
+
+.apps-section {
+  background: linear-gradient(180deg, rgba(225, 245, 255, 0.94), rgba(232, 255, 225, 0.94));
+  border: 4px solid rgba(88, 153, 255, 0.2);
+}
+
+.section-heading {
+  text-align: center;
+  margin: 0 0 22px;
+}
+
+.section-tag {
+  display: inline-block;
+  margin: 0 0 10px;
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  background: rgba(255, 255, 255, 0.78);
+  color: var(--blueberry);
+}
+
+.section-heading h2 {
+  font-size: clamp(2rem, 4vw, 2.8rem);
+}
+
+.section-heading p:last-child {
+  margin: 10px 0 0;
+  font-size: 1.05rem;
+}
+
 .hero,
 .quiz-header,
 .quiz-panel,
@@ -538,6 +583,11 @@ label {
 
   .quiz-topline {
     flex-direction: column;
+  }
+
+  .activity-section {
+    padding: 18px;
+    border-radius: 24px;
   }
 
   .home-page::before,
