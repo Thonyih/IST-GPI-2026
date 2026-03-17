@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Colors and Shapes App</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="quiz-page quiz-colors">
+  <main class="quiz-shell">
+    <a class="back-link" href="index.html">← Back to Games</a>
+    <section class="quiz-header">
+      <div class="hero-bubble">🎨</div>
+      <h1>Colors and Shapes App</h1>
+      <p>Tap the correct color or shape and collect easy points.</p>
+    </section>
+
+    <section class="quiz-panel" data-quiz="colors">
+      <div class="quiz-topline">
+        <span id="colors-progress">Question 1 of 3</span>
+        <span id="colors-score">Score: 0</span>
+      </div>
+      <div id="colors-visual" class="question-visual"></div>
+      <h2 id="colors-question">Loading question...</h2>
+      <div id="colors-answers" class="answers"></div>
+      <p id="colors-feedback" class="feedback" aria-live="polite"></p>
+      <button id="colors-next" class="next-button" type="button">Next Question</button>
+      <button id="colors-restart" class="restart-button" type="button">Play Again</button>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>

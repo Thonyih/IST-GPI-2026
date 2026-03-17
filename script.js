@@ -34,6 +34,66 @@ const quizData = {
       answers: ["Mud", "Pebbles", "Jewels"],
       correct: "Jewels"
     }
+  ],
+  alphabet: [
+    {
+      visual: "A",
+      question: "Which picture starts with the letter A?",
+      answers: ["Apple 🍎", "Ball 🏀", "Cat 🐱"],
+      correct: "Apple 🍎"
+    },
+    {
+      visual: "B",
+      question: "Which picture starts with the letter B?",
+      answers: ["Sun ☀️", "Banana 🍌", "Fish 🐟"],
+      correct: "Banana 🍌"
+    },
+    {
+      visual: "C",
+      question: "Which picture starts with the letter C?",
+      answers: ["Car 🚗", "Drum 🥁", "Leaf 🍃"],
+      correct: "Car 🚗"
+    }
+  ],
+  numbers: [
+    {
+      visual: "⭐ ⭐ ⭐",
+      question: "How many stars can you count?",
+      answers: ["2", "3", "4"],
+      correct: "3"
+    },
+    {
+      visual: "🍎 🍎 🍎 🍎",
+      question: "How many apples are here?",
+      answers: ["4", "5", "6"],
+      correct: "4"
+    },
+    {
+      visual: "⚽ ⚽ ⚽ ⚽ ⚽",
+      question: "How many balls can you see?",
+      answers: ["3", "5", "7"],
+      correct: "5"
+    }
+  ],
+  colors: [
+    {
+      visual: "🟥",
+      question: "Tap the name of this color.",
+      answers: ["Blue", "Red", "Green"],
+      correct: "Red"
+    },
+    {
+      visual: "⚪",
+      question: "Which shape is a circle?",
+      answers: ["Circle", "Square", "Triangle"],
+      correct: "Circle"
+    },
+    {
+      visual: "🟨",
+      question: "Tap the name of this color.",
+      answers: ["Purple", "Yellow", "Black"],
+      correct: "Yellow"
+    }
   ]
 };
 
@@ -70,6 +130,7 @@ function setupQuiz(type) {
   const feedbackEl = document.getElementById(`${type}-feedback`);
   const progressEl = document.getElementById(`${type}-progress`);
   const scoreEl = document.getElementById(`${type}-score`);
+  const visualEl = document.getElementById(`${type}-visual`);
   const nextButton = document.getElementById(`${type}-next`);
   const restartButton = document.getElementById(`${type}-restart`);
 
@@ -86,6 +147,9 @@ function setupQuiz(type) {
     feedbackEl.textContent = "";
     progressEl.textContent = `Question ${currentIndex + 1} of ${questions.length}`;
     scoreEl.textContent = `Score: ${score}`;
+    if (visualEl) {
+      visualEl.textContent = currentQuestion.visual || "";
+    }
     nextButton.classList.remove("visible");
     restartButton.classList.remove("visible");
 

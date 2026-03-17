@@ -1,54 +1,154 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kids Quiz Garage</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body class="home-page">
-  <main class="page-shell">
-    <section class="hero">
-      <p class="eyebrow">Play, Learn, Smile</p>
-      <h1>Kids Quiz Garage</h1>
-      <p class="hero-copy">
-        Pick a bright adventure, enter the secret access code, and start a quick quiz game.
-      </p>
-      <div class="code-badge">Access code for both games: <strong>123456abc</strong></div>
-    </section>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kids Learning Garage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Fredoka:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="home-page">
+    <main class="page-shell">
+      <section class="hero">
+        <p class="eyebrow">Play, Learn, Smile</p>
+        <h1>Kids Learning Garage</h1>
+        <p class="hero-copy">
+          Pick a bright adventure, enter the secret access code, and start a
+          quick game or learning app.
+        </p>
+        <div class="code-badge">
+          Access code for all activities: <strong>123456abc</strong>
+        </div>
+      </section>
 
-    <section class="game-grid">
-      <article class="game-card car-card">
-        <div class="game-icon">🚗</div>
-        <h2>Car Quiz</h2>
-        <p>Zoom through colorful questions about cars, wheels, and safe road fun.</p>
-        <label for="car-code">Enter code</label>
-        <input id="car-code" class="code-input" type="text" placeholder="Type 123456abc">
-        <button class="play-button" data-code-target="car-code" data-destination="car-quiz.html">
-          Start Car Quiz
-        </button>
-        <p class="hint">Secret code: 123456abc</p>
-      </article>
+      <section class="list-heading">
+        <h2>Consultable Activity List</h2>
+        <p>Five simple kid-friendly activities are ready to open below.</p>
+      </section>
 
-      <article class="game-card treasure-card">
-        <div class="game-icon">🏴‍☠️</div>
-        <h2>Treasure Quiz</h2>
-        <p>Follow the map and answer happy treasure hunt questions for a shiny win.</p>
-        <label for="treasure-code">Enter code</label>
-        <input id="treasure-code" class="code-input" type="text" placeholder="Type 123456abc">
-        <button class="play-button" data-code-target="treasure-code" data-destination="treasure-quiz.html">
-          Start Treasure Quiz
-        </button>
-        <p class="hint">Secret code: 123456abc</p>
-      </article>
-    </section>
+      <section class="game-grid">
+        <article class="game-card car-card">
+          <div class="game-icon">🚗</div>
+          <h2>Car Game Quiz</h2>
+          <p>
+            Zoom through colorful questions about cars, wheels, and safe road
+            fun.
+          </p>
+          <label for="car-code">Enter code</label>
+          <input
+            id="car-code"
+            class="code-input"
+            type="text"
+            placeholder="Type 123456abc"
+          />
+          <button
+            class="play-button"
+            data-code-target="car-code"
+            data-destination="car-quiz.html"
+          >
+            Start Car Quiz
+          </button>
+          <p class="hint">Secret code: 123456abc</p>
+        </article>
 
-    <p id="access-message" class="access-message" aria-live="polite"></p>
-  </main>
+        <article class="game-card treasure-card">
+          <div class="game-icon">🏴‍☠️</div>
+          <h2>Treasure Game Quiz</h2>
+          <p>
+            Follow the map and answer happy treasure hunt questions for a shiny
+            win.
+          </p>
+          <label for="treasure-code">Enter code</label>
+          <input
+            id="treasure-code"
+            class="code-input"
+            type="text"
+            placeholder="Type 123456abc"
+          />
+          <button
+            class="play-button"
+            data-code-target="treasure-code"
+            data-destination="treasure-quiz.html"
+          >
+            Start Treasure Quiz
+          </button>
+          <p class="hint">Secret code: 123456abc</p>
+        </article>
 
-  <script src="script.js"></script>
-</body>
+        <article class="game-card alphabet-card">
+          <div class="game-icon">🔤</div>
+          <h2>Alphabet Match App</h2>
+          <p>See a letter and tap the picture that matches its first sound.</p>
+          <label for="alphabet-code">Enter code</label>
+          <input
+            id="alphabet-code"
+            class="code-input"
+            type="text"
+            placeholder="Type 123456abc"
+          />
+          <button
+            class="play-button"
+            data-code-target="alphabet-code"
+            data-destination="alphabet-match.html"
+          >
+            Open Alphabet Match
+          </button>
+          <p class="hint">Secret code: 123456abc</p>
+        </article>
+
+        <article class="game-card numbers-card">
+          <div class="game-icon">🔢</div>
+          <h2>Numbers Counting App</h2>
+          <p>Count the objects you see and choose the correct number.</p>
+          <label for="numbers-code">Enter code</label>
+          <input
+            id="numbers-code"
+            class="code-input"
+            type="text"
+            placeholder="Type 123456abc"
+          />
+          <button
+            class="play-button"
+            data-code-target="numbers-code"
+            data-destination="numbers-counting.html"
+          >
+            Open Numbers Counting
+          </button>
+          <p class="hint">Secret code: 123456abc</p>
+        </article>
+
+        <article class="game-card colors-card">
+          <div class="game-icon">🎨</div>
+          <h2>Colors and Shapes App</h2>
+          <p>
+            Tap the correct color or shape in a fast and cheerful mini activity.
+          </p>
+          <label for="colors-code">Enter code</label>
+          <input
+            id="colors-code"
+            class="code-input"
+            type="text"
+            placeholder="Type 123456abc"
+          />
+          <button
+            class="play-button"
+            data-code-target="colors-code"
+            data-destination="colors-shapes.html"
+          >
+            Open Colors and Shapes
+          </button>
+          <p class="hint">Secret code: 123456abc</p>
+        </article>
+      </section>
+
+      <p id="access-message" class="access-message" aria-live="polite"></p>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
